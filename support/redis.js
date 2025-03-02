@@ -22,5 +22,5 @@ export const getJob = async () => {
 export const cleanJobs = async () => {
     //await queue.drain() //drain esvazia a fila
     //PENDENTE criar validação para apagar a fila somente se não tiver jobs ativos
-    await queue.obliterate() // obliterate apaga a fila
+    await queue.obliterate({force:true}) // obliterate apaga a fila
 }
