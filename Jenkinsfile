@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             // image 'mcr.microsoft.com/playwright:v1.50.1-noble' // imagem oficial do Playwright
-            image 'papitodev/playwright-nj-v1.49.1-noble' // imagem customizada do Playwright com java incluído para execução do server do allure
+            image 'albertmvieira/playwright-nj-v1.50.1-noble' // imagem customizada do Playwright com java incluído para execução do server do allure. Esta na minha conta do DockerHub
             args '--network qatw-primeira-edicao_skynet'
         }
     }
