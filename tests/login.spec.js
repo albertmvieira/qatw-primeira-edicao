@@ -47,7 +47,7 @@ test('Deve acessar a conta do usuário - pegando o código de confirmação do B
   
 });
 
-test.only('Deve acessar a conta do usuário - Lendo o código de confirmação da fila do Redis', async ({ page }) => {
+test('Deve acessar a conta do usuário - Lendo o código de confirmação da fila do Redis', async ({ page }) => {
 
   const loginPage = new LoginPage(page)
   const dashPage = new DashPage(page)
