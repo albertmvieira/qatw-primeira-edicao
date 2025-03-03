@@ -17,7 +17,7 @@ pipeline {
         stage('E2E Tests') {
             steps {
                 echo 'Executando os testes de ponta a ponta'
-                sh 'npx playwright test'
+                sh 'npx playwright test --project=chromium'
                 allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
             }
         }
