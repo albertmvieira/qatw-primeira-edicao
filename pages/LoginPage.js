@@ -14,8 +14,8 @@ export class LoginPage {
     }
 
     async informaSenha(senha) {
-        for (const digito of senha) {
-            await this.page.getByRole('button', { name: digito }).click();
+        for (const digito of senha) { // Para cada digito da senha 
+            await this.page.getByRole('button', { name: digito }).click(); // Clica no botão correspondente ao digito
         }
         await this.page.getByRole('button', { name: 'Continuar' }).click();
     }
